@@ -1,0 +1,31 @@
+<div class="container my-5">
+ 
+    <h1 class="mb-3">Product</h1>
+    <table class="table" *ngIf="products && products.length > 0">
+        <thead>
+            <tr>
+                <th>Product ID</th>
+                <th> Name</th>
+                <th>Product Number</th> 
+                <th>List Price</th>
+                <th>Safety Stock Level</th>
+                <th>Color</th>
+                <th>Sell Start Date</th>
+      
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of products">
+                <td>{{product.productId}}</td>
+                <td>{{product.name}}</td>
+                <td>{{product.productNumber}}</td>
+                <td>{{product.listPrice}}</td>
+                <td>{{product.safetyStockLevel}}</td>
+                <td>{{product.color}}</td>
+                <td>{{product.sellStartDate}}</td>
+            </tr>
+        </tbody>
+    </table>
+ <p *ngIf="!products || products.length == 0"> No products found</p>
+</div>
+
