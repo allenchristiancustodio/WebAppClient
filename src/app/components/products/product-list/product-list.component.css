@@ -1,0 +1,33 @@
+table {
+    width: 100%;
+  }
+
+  
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+  
+
+  .mat-column-productId{
+    flex: 0 0 10%;
+  }
+
+
+.mat-form-field {
+    font-size: 14px;
+    width: 20%;
+  }
+  
+  
+  
+  .th-center{
+    text-align: center;
+  }
+  .th-left{
+    text-align: left;
+  }
+  .th-right{
+    text-align: right;
+  }
